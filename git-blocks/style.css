@@ -80,20 +80,72 @@ div.main {
     margin: 0 15px;
     background-color: #fae596;
     display: flex;
+    justify-content: space-between;
 }
 
-div.main div {
-    background-color: #173f43;
+div.main h2,
+div.main h3 {
+    margin-top: 0;
+}
+
+div.main {
     color: #fff;
-    padding: 15px;
 }
 
 div.main p {
     margin-left: .5em;
 }
 
-div.main .left {}
+div.main-left {
+    background-color: #173f43;
+    padding: 15px;
+    flex-basis: 27%;
+}
 
-div.sidebar {
-    width: 250px;
+div.main-right {
+    display: flex;
+    flex-basis: 71%;
+    flex-direction: column;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+div.top-row,
+div.mid-row,
+div.bot-row {
+    flex-basis: 32%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.top-row div,
+div.mid-row div,
+div.bot-row div {
+    background-color: #173f43;
+    padding: 15px;
+}
+
+div.top-row div {
+    flex-basis: 32%;
+}
+
+div.mid-row div {
+    flex-basis: 49%;
+}
+
+footer {
+    color: #000;
+    margin: 10px 15px;
+    background-color: #3fb0ac;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a:link,
+footer a:visited {
+    color: blueviolet;
+}
+
+.teal {
+    color: turquoise;
 }
